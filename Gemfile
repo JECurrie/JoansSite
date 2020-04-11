@@ -23,7 +23,7 @@ gem 'actionview', '~> 6.0', '>= 6.0.2.2'
 gem 'rake', '~> 12.3', '>= 12.3.3'
 
 group :development, :test do
-  gem 'sqlite3', '1.4.1'
+  gem 'sqlite3', '~> 1.4', '>= 1.4.2' #gem 'sqlite3', '1.4.1'
   gem 'byebug',  '11.0.1', platforms: [:mri, :mingw, :x64_mingw]
 end
 
@@ -46,7 +46,7 @@ group :test do
 end
 
 group :production do
-  gem 'pg',         '1.1.4'
+  gem 'pg', '~> 1.2', '>= 1.2.3' #gem 'pg',         '1.1.4'
   gem 'aws-sdk-s3', '1.46.0', require: false
 end
 
