@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
-  root 'welcome' => 'pages#home'
+  root 'pages#home'
 #  root 'application#hello'
 end
